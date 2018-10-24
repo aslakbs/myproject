@@ -8,6 +8,7 @@ header
   margin: auto;
   text-transform: capitalize;
   font-weight: 900;
+  text-shadow: 0px 1px 2px #000000;
 }
 body
 {
@@ -34,7 +35,9 @@ a
   text-decoration: none;
   color: #f0f0f0;
 }
-
+a:hover{
+  text-decoration: underline;
+}
 .storbakgrunn
 {
   width: 80%;
@@ -62,10 +65,8 @@ a
   padding: 20px;
 }
 iframe, img#filter{
-  width: 80%;
-  height: 80%;
   transform: translate(-50%,0);
-  margin: auto 50%;
+  margin: auto 20vw;
 }
 footer
 {
