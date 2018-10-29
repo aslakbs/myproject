@@ -75,17 +75,7 @@ footer
   margin: auto;
   padding: 40px 0px;
   text-align: center;
-  display: grid;
 }
-.løsningen
-{
-  width: 100%;
-  height: 100%;
-  color: white;
-  letter-spacing: 2px;
-  opacity: 1;
-  background: rgba(0,0,0, 0.5);
-
 }
 #title_løsning
 {
