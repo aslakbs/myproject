@@ -21,23 +21,34 @@ body
   margin: 0px;
   font-family: Helvetica Neue,Helvetica,Segoe UI,Arial,sans-serif;
 }
-.toolbar
-{
+
+a.menyelement{
+  display: inline-block;
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.7vw 4vw;
+}
+a.menyelement:hover{
+  background-color: #121212;
+  font-weight: 900;
+}
+div.meny{
   width: 80%;
   margin: auto;
-  font-size: 30px;
-  padding: 10px;
+  padding: 0px;
   background-color: #121212;
-  position: sticky;
+  display: flex;
+  display: -webkit-flex;
+  overflow: hidden;
+  justify-content: center;
 }
 a
 {
   text-decoration: none;
   color: #f0f0f0;
 }
-a:hover{
-  text-decoration: underline;
-}
+
 .storbakgrunn
 {
   width: 80%;
@@ -54,7 +65,7 @@ a:hover{
   padding: 20px;
   font-style: Georgia;
   color: #121212;
-  letter-spacing: 2px;
+  order: 1;
 }
 #info a{
   display: block;
@@ -63,10 +74,12 @@ a:hover{
 {
   width: 50%;
   padding: 20px;
+  overflow: hidden;
+  order: 2;
 }
 iframe, img#filter{
-  transform: translate(-50%,0);
-  margin: auto 20vw;
+  /*transform: translate(-50%,0);*/
+  margin: inherit;
 }
 footer
 {
@@ -82,14 +95,15 @@ footer
   font-size: 30px;
   text-align: center;
 }
-
+img{
+  max-height: 100%;
+}
 #kontakt
 {
   width: 80%;
   margin: 0 auto;
   text-align: center;
   color: #121212;
-  letter-spacing: 2px;
   opacity: 1;
   background: #f0f0f0;
   display: flex;
@@ -101,10 +115,6 @@ footer
   width: 200px;
   margin: 50px 50px;
   display: inline-block;
-}
-img
-{
-  padding: 10px;
 }
 #langch{
   width: 30px;
