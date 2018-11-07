@@ -54,7 +54,6 @@ a:hover{
   padding: 20px;
   font-style: Georgia;
   color: #121212;
-  letter-spacing: 2px;
 }
 #info a{
   display: block;
@@ -66,7 +65,7 @@ a:hover{
 }
 iframe, img#filter{
   transform: translate(-50%,0);
-  margin: auto 20vw;
+  margin: auto;
 }
 footer
 {
