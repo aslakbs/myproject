@@ -57,12 +57,32 @@ a
   display: flex;
   display: -webkit-flex;
 }
+@media (max-width: 1300px){
+  .storbakgrunn{
+    flex-direction: column;
+    justify-content: center;
+  }
+  #media{
+    display: inline-block;
+  }
+  iframe, img#filter{
+    display: block;
+    margin: 0px auto;
+  }
+}
+@media (min-width: 1301px){
+  #info{
+    float: left;
+    width: 45%;
+  }
+  #media{
+    width: 50%;
+  }
+}
 #info
 {
-  float: left;
-  width: 45%;
   height: 90%;
-  padding: 20px;
+  padding: 5%;
   font-style: Georgia;
   color: #121212;
   order: 1;
@@ -72,14 +92,12 @@ a
 }
 #media
 {
-  width: 50%;
   padding: 20px;
   overflow: hidden;
   order: 2;
 }
 iframe, img#filter{
-  /*transform: translate(-50%,0);*/
-  margin: inherit;
+  width: ;
 }
 footer
 {
@@ -88,7 +106,6 @@ footer
   margin: auto;
   padding: 40px 0px;
   text-align: center;
-}
 }
 #title_løsning
 {
@@ -110,7 +127,16 @@ img{
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.kontaktinfo
+{
+  width: 80%;
+  margin: 0 auto;
+  color: #121212;
+  background: #f0f0f0;
+}
+.kontaktinfo div{
+  padding: 20px 30px;
+}
 #kontakt div
 {
   width: 200px;
